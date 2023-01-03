@@ -152,7 +152,6 @@ header {
 
 .about-me-filho {
     width: 100%;
-    height: 100%;
     display: flex;
     margin-bottom: 5rem;
     align-items: center;
@@ -181,7 +180,6 @@ header {
 
 .sessao-conhecimentos {
     width: 100%;
-    height: 100vh;
 }
 
 .coluna1 {
@@ -364,7 +362,7 @@ header {
     margin-right: 1.5rem;
 }
 
-.social-media i:hover{
+.social-media i:hover {
     color: #333333;
 }
 
@@ -377,7 +375,8 @@ header {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
 }
-.session-footer{
+
+.session-footer {
     width: 100%;
     height: 10vh;
     background-color: #000000;
@@ -386,7 +385,69 @@ header {
     padding-top: 5rem;
 }
 
-.session-footer h3{
+.session-footer h3 {
     color: #f5f5f5;
     font-family: var(--font-secondary);
+}
+
+@media screen and (max-width: 850px) {
+    .projets-video {
+        flex-direction: column;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .video-sessao1 {
+        width: 100%;
+    }
+
+    .video-sessao2 {
+        width: 100%;
+    }
+
+    .video-sessao3 {
+        width: 100%;
+    }
+
+    .button-link {
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .about-me-filho {
+        display: block;
+        text-align: center;
+    }
+
+    .me {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .about-me-filho p {
+        margin-left: 7rem;
+    }
+
+    .conhecimentos {
+        display: block;
+    }
+
+    .coluna1 {
+        width: 70%;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+@media screen and (max-width: 580px) {
+    .projets-video {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+@media screen and (max-width: 580px) {
+    .projets-video {
+        padding-left: 2rem;
+        padding-right: 1rem;
+    }
 }
