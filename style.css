@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,800;1,200;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
 
+body, html{
+    overflow-x: hidden
+}
+
 * {
     margin: 0;
     list-style-type: none;
@@ -11,7 +15,6 @@
     --font-primary: "Baloo Da 2", serif;
     --font-secondary: "Josefin Slab", serif;
     --font-action: "Muli", serif;
-    margin-left: -5rem;
 }
 
 .line {
@@ -25,7 +28,6 @@
 .top-bar {
     background-color: black;
     height: 3rem;
-    margin-left: 5rem;
 }
 
 .top-bar p {
@@ -144,7 +146,6 @@ header {
     background-color: #000000;
     margin-bottom: 3.5rem;
     margin-top: -5.7rem;
-    margin-left: 5rem;
 }
 
 .sessao-header-about-me h1 {
@@ -161,7 +162,6 @@ header {
     /*h1-centraliza-elemento vertical*/
     justify-content: center;
     /*torna o elemento horizontal*/
-    margin-left: 5rem;
 }
 
 .me {
@@ -207,7 +207,6 @@ header {
 .features-area {
     width: 100%;
     height: 100%;
-    margin-left: 2.5rem;
 }
 
 .conhecimento:nth-child(1) {
@@ -241,13 +240,11 @@ header {
 .sessao-header {
     display: flex;
     align-items: center;
-    width: 100%;
     /*h1-centraliza-elemento vertical*/
     justify-content: center;
     /*torna o elemento horizontal*/
     background-color: #000000;
     margin-bottom: 1.5rem;
-    margin-left: 5rem;
 }
 
 .sessao-header h1 {
@@ -285,13 +282,11 @@ header {
 .sessao-header-card {
     display: flex;
     align-items: center;
-    width: 100%;
     /*h1-centraliza-elemento vertical*/
     justify-content: center;
     /*torna o elemento horizontal*/
     background-color: #000000;
     margin-bottom: 3.5rem;
-    margin-left: 5rem;
 }
 
 
@@ -299,10 +294,6 @@ header {
     font-family: var(--font-primary);
     font-size: 2rem;
     color: #f5f5f5;
-}
-
-.section-project{
-margin-left: 7rem;
 }
 
 .projets-video {
@@ -362,7 +353,6 @@ margin-left: 7rem;
     width: 100%;
     bottom: 2rem;
     text-align: center;
-    margin-left: 5rem;
 }
 
 .social-media i {
@@ -397,7 +387,6 @@ margin-left: 7rem;
     margin-top: 3rem;
     text-align: center;
     padding-top: 5rem;
-    margin-left: 4rem;
 }
 
 .session-footer h3 {
@@ -429,7 +418,10 @@ margin-left: 7rem;
     }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 786px) {
+    body, html{
+        overflow-x: hidden !important;
+    }
     .about-me-filho {
         display: block;
         text-align: center;
@@ -454,40 +446,32 @@ margin-left: 7rem;
         padding-right: 5rem;
     }
 }
-
 @media screen and (max-width: 580px) {
     .projets-video {
         padding-left: 2rem;
         padding-right: 2rem;
     }
 }
-
 @media screen and (max-width: 580px) {
     .banner {
         left: 4%;
     }
-
     .top-bar p {
-        font-size: 0.7rem;
+      font-size: 0.7rem;
     }
-
     .banner h1 {
         font-size: 1.5rem;
     }
-
     .banner p {
         font-size: 1rem;
     }
-
     .about-me-filho {
-        margin-left: 1.5rem;
+    margin-left: -4.5rem;
     }
-
     .projets-video {
         padding-left: 2rem;
         padding-right: 1rem;
     }
-
     .img-wrapper {
         height: 86%;
     }
