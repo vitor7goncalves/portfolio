@@ -447,7 +447,7 @@ header {
 }
 @media screen and (max-width: 580px) {
     .banner {
-        left: 7%;
+        left: 4%;
     }
     .top-bar p {
       font-size: 0.7rem;
