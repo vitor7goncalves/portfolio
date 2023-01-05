@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,800;1,200;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
 
-body{
-    overflow-x: hidden
-}
-
 * {
     margin: 0;
     list-style-type: none;
@@ -91,6 +87,7 @@ header {
 }
 
 .banner p {
+    width: 70%;
     font-family: var(--font-secondary);
     color: rgba(255, 255, 255, 1);
     font-size: 2rem;
@@ -187,21 +184,15 @@ header {
 }
 
 .coluna1 {
-    width: 50%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-left: 10rem;
+    padding-left: 5rem;
     padding-right: 5rem;
 }
 
 .coluna2 {
-    width: 50%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
     padding-left: 5rem;
-    padding-right: 10rem;
+    padding-right: 5rem;
 }
 
 .features-area {
@@ -419,9 +410,6 @@ header {
 }
 
 @media screen and (max-width: 786px) {
-    body{
-        overflow-x: hidden;
-    }
     .about-me-filho {
         display: block;
         text-align: center;
@@ -441,37 +429,50 @@ header {
     }
 
     .coluna1 {
-        width: 70%;
-        padding-left: 5rem;
-        padding-right: 5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .coluna2 {
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 }
+
 @media screen and (max-width: 580px) {
     .projets-video {
         padding-left: 2rem;
         padding-right: 2rem;
     }
 }
+
 @media screen and (max-width: 580px) {
     .banner {
         left: 4%;
     }
+
     .top-bar p {
-      font-size: 0.7rem;
+        font-size: 0.7rem;
     }
+
     .banner h1 {
+        width: 70%;
         font-size: 1.5rem;
     }
+
     .banner p {
         font-size: 1rem;
     }
+
     .about-me-filho {
-    margin-left: -4.5rem;
+        margin-left: -4.5rem;
     }
+
     .projets-video {
         padding-left: 2rem;
         padding-right: 1rem;
     }
+
     .img-wrapper {
         height: 86%;
     }
