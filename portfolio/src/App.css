@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,800;1,200;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
+
+* {
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+:root {
+  --font-primary: "Baloo Da 2", serif;
+  --font-secondary: "Josefin Slab", serif;
+  --font-action: "Muli", serif;
+}
+
+.line {
+  width: 100%;
+  height: .1rem;
+  background-color: #ffffff;
+  box-shadow: .2rem .2rem 1px rgba(0, 0, 0, 0.4);
+  transition: transform .2s;
+}
+
+.top-bar {
+  background-color: black;
+  height: 3rem;
+}
+
+.top-bar p {
+  color: #f5f5f5;
+  font-family: var(--font-secondary);
+  margin-top: -2rem;
+  margin-right: 3rem;
+  text-align: end;
+}
+
+.logo {
+  width: 3rem;
+  height: 3rem;
+  margin-left: 3rem;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.img-wrapper {
+  width: 100%;
+  height: 87%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+  animation: zoom 20s;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.banner {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+}
+
+.banner h1 {
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  text-shadow: .3rem .4rem 2px rgba(0, 0, 0, 0.4);
+  line-height: 3.5rem;
+  margin-bottom: 2rem;
+  animation: moveBanner 1s;
+}
+
+.banner p {
+  width: 70%;
+  font-family: var(--font-secondary);
+  color: rgba(255, 255, 255, 1);
+  font-size: 2rem;
+  text-shadow: .3rem .4rem 2px rgba(0, 0, 0, 0.4);
+  margin-bottom: 2rem;
+  animation: moveBanner 1.5s;
+}
+
+.banner button {
+  font-family: var (--font-action);
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  background: #000046;
+  background: -webkit-linear-gradient(to top, #1CB5E0, #000046);
+  background: linear-gradient(to top, #1CB5E0, #000046);
+  padding: 1rem 3rem;
+  /* primeiro valor em cima e em baixo, segundo valor nas laterais*/
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  animation: moveBanner 2s;
+}
+
+@keyframes moveBanner {
+  0% {
+    transform: translateY(20rem) rotateY(-30deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0) rotateY(0);
+    opacity: 1;
+  }
+}
+
+.menu-link:hover {
+  color: #1CB5E0;
+}
+
+.about-me-sessao {
+  width: 100vw;
+  height: 15rem;
+  margin-bottom: 11rem;
+}
+
+.sessao-header-about-me {
+  display: flex;
+  align-items: center;
+  /*h1-centraliza-elemento vertical*/
+  justify-content: center;
+  /*torna o elemento horizontal*/
+  background-color: #000000;
+  margin-bottom: 3.5rem;
+  margin-top: -5.7rem;
+}
+
+.sessao-header-about-me h1 {
+  font-family: var(--font-primary);
+  font-size: 2rem;
+  color: #f5f5f5;
+}
+
+.about-me-filho {
+  width: 100%;
+  display: flex;
+  margin-bottom: 5rem;
+  align-items: center;
+  /*h1-centraliza-elemento vertical*/
+  justify-content: center;
+  /*torna o elemento horizontal*/
+}
+
+.me {
+  width: 17rem;
+  height: 17rem;
+  margin-left: 10rem;
+  margin-right: 5rem;
+}
+
+.about-me-text {
+  width: 70%;
+}
+
+.conhecimentos {
+  display: flex;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(6, 6rem);
+  row-gap: .2rem;
+}
+
+.sessao-conhecimentos {
+  width: 100%;
+}
+
+.icon-features {
+  width: 2.5rem;
+}
+
+.coluna1 {
+  height: 100%;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.coluna2 {
+  height: 100%;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.features-area {
+  width: 100%;
+  height: 100%;
+}
+
+.conhecimento:nth-child(1) {
+  margin-bottom: 5rem;
+}
+
+.conhecimento:nth-child(2) {
+  margin-bottom: 5rem;
+}
+
+.conhecimento:nth-child(3) {
+  margin-bottom: 5rem;
+}
+
+.conhecimento:nth-child(4) {
+  margin-bottom: 5rem;
+}
+
+.conhecimento:nth-child(5) {
+  margin-bottom: 5rem;
+}
+
+.conhecimento:nth-child(6) {
+  margin-bottom: 5rem;
+}
+
+.sessao-conhecimentos {
+  background-color: #f5f5f5;
+}
+
+.sessao-header {
+  display: flex;
+  align-items: center;
+  /*h1-centraliza-elemento vertical*/
+  justify-content: center;
+  /*torna o elemento horizontal*/
+  background-color: #000000;
+  margin-bottom: 1.5rem;
+}
+
+.sessao-header h1 {
+  font-family: var(--font-primary);
+  font-size: 2rem;
+  color: #f5f5f5;
+}
+
+.conhecimento-header {
+  display: flex;
+  align-items: center;
+}
+
+.conhecimento-header i {
+  font-size: 2.5rem;
+}
+
+.conhecimento-header h3 {
+  font-family: var(--font-secondary);
+  padding-left: 1rem;
+}
+
+.conhecimento-text {
+  font-family: var(--font-secondary);
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.projetos {
+  display: flex;
+  justify-content: space-evenly;
+  /*espalha os objetos igualmente*/
+}
+
+.sessao-header-card {
+  display: flex;
+  align-items: center;
+  /*h1-centraliza-elemento vertical*/
+  justify-content: center;
+  /*torna o elemento horizontal*/
+  background-color: #000000;
+  margin-bottom: 3.5rem;
+}
+
+
+.sessao-header-card h1 {
+  font-family: var(--font-primary);
+  font-size: 2rem;
+  color: #f5f5f5;
+}
+
+.projets-video {
+  display: flex;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.project-text {
+  font-family: var(--font-secondary);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 3rem;
+}
+
+.project-text h3 {
+  font-family: var(--font-primary);
+  margin-bottom: 1rem;
+}
+
+.video-sessao1 {
+  width: 80rem;
+  height: 20rem;
+  margin-bottom: 3rem;
+  margin-right: 2rem;
+}
+
+.video-sessao2 {
+  width: 105rem;
+  height: 20rem;
+  margin-bottom: 3rem;
+  margin-right: 2rem;
+}
+
+.video-sessao3 {
+  width: 65rem;
+  height: 20rem;
+  margin-bottom: 3rem;
+  margin-right: 2rem;
+}
+
+.button-link {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 3rem;
+  background-color: #f5f5f5;
+  border: solid #000000;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #000000;
+  font-family: var(--font-secondary);
+}
+
+.social-media {
+  width: 100%;
+  bottom: 2rem;
+  text-align: center;
+}
+
+.social-media i {
+  font-size: 2rem;
+  color: #000000;
+  align-items: center;
+  border-radius: 50%;
+  transition: color .5s;
+  transition: font-size .5s;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.social-media i:hover {
+  color: #333333;
+}
+
+.social-media img {
+  font-size: 2rem;
+  color: #000000;
+  align-items: center;
+  transition: color .5s;
+  transition: font-size .5s;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.session-footer {
+  width: 100%;
+  height: 10vh;
+  background-color: #000000;
+  margin-top: 3rem;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.session-footer h3 {
+  color: #f5f5f5;
+  font-family: var(--font-secondary);
+}
+
+@media screen and (max-width: 850px) {
+  .projets-video {
+    flex-direction: column;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .video-sessao1 {
+    width: 100%;
+  }
+
+  .video-sessao2 {
+    width: 100%;
+  }
+
+  .video-sessao3 {
+    width: 100%;
+  }
+
+  .button-link {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .about-me-filho {
+    display: block;
+    text-align: center;
+  }
+
+  .me {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .about-me-filho p {
+    margin-left: 7rem;
+  }
+
+  .conhecimentos {
+    display: block;
+  }
+
+  .coluna1 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .coluna2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .projets-video {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .banner {
+    left: 4%;
+  }
+
+  .top-bar p {
+    font-size: 0.7rem;
+  }
+
+  .banner h1 {
+    width: 70%;
+    font-size: 1.5rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
+
+  .about-me-filho {
+    margin-left: -4.5rem;
+  }
+
+  .projets-video {
+    padding-left: 2rem;
+    padding-right: 1rem;
+  }
+
+  .img-wrapper {
+    height: 86%;
+  }
+}
