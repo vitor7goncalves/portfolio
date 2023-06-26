@@ -294,6 +294,7 @@ header {
 }
 
 .project-text {
+    width: 50%;
     font-family: var(--font-secondary);
     display: flex;
     flex-direction: column;
@@ -335,8 +336,8 @@ header {
 }
 
 .button-link {
-    max-width: 700px;
-    min-width: 500px;
+    max-width: 500px;
+    min-width: 300px;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     margin-top: 3rem;
@@ -399,6 +400,10 @@ header {
         flex-direction: column;
         padding-left: 5rem;
         padding-right: 5rem;
+    }
+    .project-text {
+        width: 100%;
+        align-items: center;
     }
 
     .video-sessao1 {
