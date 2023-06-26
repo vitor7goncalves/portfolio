@@ -327,8 +327,15 @@ header {
     margin-bottom: 3rem;
     margin-right: 2rem;
 }
+.video-sessao4 {
+    width: 65rem;
+    height: 20rem;
+    margin-bottom: 3rem;
+    margin-right: 2rem;
+}
 
 .button-link {
+    min-width: 500px;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     margin-top: 3rem;
@@ -401,6 +408,9 @@ header {
     }
 
     .video-sessao3 {
+        width: 100%;
+    }
+    .video-sessao4 {
         width: 100%;
     }
 
