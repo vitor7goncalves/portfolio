@@ -3,8 +3,13 @@
 
 * {
     margin: 0;
+    padding: 0;
     list-style-type: none;
     text-decoration: none;
+}
+
+.container *{
+    max-width: 100%;
 }
 
 :root {
@@ -24,14 +29,32 @@
 .top-bar {
     background-color: black;
     height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.top-bar p {
+.top-bar-soon{
+    display: flex;
+    align-items: center;
+}
+
+.top-bar select{
+    width: 4rem;
+    height: 2rem;
+    margin-right: 3rem;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: medium;
+    font-family: var(--font-secondary);
+    border-radius: 7px;
+    border: none;
+}
+
+.top-bar-soon p {
     color: #f5f5f5;
     font-family: var(--font-secondary);
-    margin-top: -2rem;
-    margin-right: 3rem;
-    text-align: end;
+    margin-left: 3rem;
 }
 
 .logo {

@@ -15,26 +15,32 @@
 <body>
   <div class="container">
     <div class="top-bar">
-      <img src="img/img/logo.png" class="logo" alt="">
-      <p>E-mail: me@vitor7goncalves.gq</p>
+      <div class="top-bar-soon">
+        <img src="img/img/logo.png" class="logo" alt="">
+        <p>E-mail: me@vitor7goncalves.gq</p>
+      </div>
+      <select onclick="TranslateForPTBR()" name="language" id="lang">
+        <option value="eng">Eng</option>
+        <option value="Pt-Br">Pt-Br</option>
+      </select>
     </div>
     <header>
       <div class="img-wrapper">
         <img src="img/img/backgroud.png" alt="">
       </div>
       <div class="banner">
-        <h1>Game developer and digital designer</h1>
+        <h1 id="t1">Game developer and digital designer</h1>
         <p>Vitor Gonçalves Rodrigues</p>
       </div>
     </header>
     <div class="sessao-header-about-me">
-      <h1>About me</h1><br>
+      <h1 id="t2">About me</h1><br>
     </div>
     <div class="about-me-sessao">
       <div class="about-me-filho">
         <img src="img/img/me.png" alt="" class="me">
         <div class="conhecimento-text">
-          <p class="about-me-text">My name is Vitor Gonçalves Rodrigues, I was born in Rio de Janeiro on May 2, 1982, I
+          <p id="t3" class="about-me-text">My name is Vitor Gonçalves Rodrigues, I was born in Rio de Janeiro on May 2, 1982, I
             live in Ribeirão Preto in the state of São Paulo.
             I'm a developer and game designer. A little over 2 years ago I decided to migrate to digital
             art. I worked in a startup that has an e-commerce project for 9 months. Today I work on game projects as a
@@ -47,7 +53,7 @@
       </div>
       <section class="sessao-conhecimentos">
         <div class="sessao-header">
-          <h1>Features</h1><br>
+          <h1 id="t4">Features</h1><br>
         </div>
         <div class="features-area">
           <div class="conhecimentos">
@@ -58,7 +64,8 @@
                   <h3>C Sharp</h3>
                 </div>
                 <div class="conhecimento-text">
-                  <p>I've been developing with C Sharp for just over 1 year. However, the longest time was within Unity.
+                  <p class="p-0">I've been developing with C Sharp for just over 1 year. However, the longest time was
+                    within Unity.
                     But I have small projects on GitHub where I used this tool. And of course, every day I learn more
                     because my studies with C Sharp don't stop.</p>
                 </div>
@@ -69,10 +76,9 @@
                   <h3>Adobe Photoshop</h3>
                 </div>
                 <div class="conhecimento-text">
-                  <p>Adobe photoshop is used to create digital art. The version I'm currently working on is 2019. All
-                    the art I created in my projects was 97% through Photoshop. As I said about myself, I migrated about
-                    2 years ago to digital art. Because I spent my whole life drawing and painting in a conventional
-                    way.</p>
+                  <p class="p-1">Adobe photoshop is used to create digital art. The version I'm currently working on is 2019. 
+                    All the art I created in my projects was 97% through Photoshop. As I said about myself, I migrated about
+                    2 years ago to digital art. Because I spent my whole life drawing and painting in a conventional way.</p>
                 </div>
               </div>
               <div class="conhecimento">
@@ -81,7 +87,8 @@
                   <h3>CSS</h3>
                 </div>
                 <div class="conhecimento-text">
-                  <p>And to complete the front-end trio, I couldn't leave out the CSS. As well as Javascript and HTML,
+                  <p class="p-2">And to complete the front-end trio, I couldn't leave out the CSS. As well as Javascript
+                    and HTML,
                     I've been studying CSS since September 2020. And along with the other technologies, I created some
                     projects that are on my GitHub, and I also used them at Big2be.</p>
                 </div>
@@ -94,12 +101,11 @@
                   <h3>Unity</h3>
                 </div>
                 <div class="conhecimento-text">
-                  <p>The technology I use the most right now. With Unity I created and published my first game on Steam,
-                    Magus Pocus. Unity is a development engine that uses the C Sharp programming language, more common
+                  <p class="p-3">The technology I use the most right now. With Unity I created and published my first
+                    game on Steam,
+                    Magus Pocus. Unity is a development engine that uses the C Sharp programming language, very common
                     to
-                    create 2D and 3D games, but, as far as I know there are professionals who work with this tool also
-                    to
-                    develop NFT's</p>
+                    create 2D and 3D games.</p>
                 </div>
               </div>
               <div class="conhecimento">
@@ -108,7 +114,8 @@
                   <h3>Javascript</h3>
                 </div>
                 <div class="conhecimento-text">
-                  <p>I've been learning about Javascript since September 2020. Despite focusing more on C# and Unity, I
+                  <p class="p-4">I've been learning about Javascript since September 2020. Despite focusing more on C#
+                    and Unity, I
                     worked at a company located in Ribeirão Preto - SP called Big2be, using my knowledge and Javascript.
                     Company specialized in e-commerce for supermarkets, restaurants and the like.</p>
                 </div>
@@ -119,7 +126,8 @@
                   <h3>HTML</h3>
                 </div>
                 <div class="conhecimento-text">
-                  <p>I've been studying and improving myself in HTML along with Javascript. And just like in JS, I used
+                  <p class="p-5">I've been studying and improving myself in HTML along with Javascript. And just like in
+                    JS, I used
                     HTML in my personal projects and in the company mentioned above.</p>
                 </div>
               </div>
@@ -130,7 +138,7 @@
       </section>
       <section class="sessao-projetos">
         <div class="sessao-header-card">
-          <h1>Projets</h1>
+          <h1 id="t5">Projets</h1>
         </div>
         <div class="section-project">
           <div class="projets-video">
@@ -139,10 +147,11 @@
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
             <div class="project-text">
-              <h3>Game I developed and sell on Steam</h3>
-              <p>Magus Pocus is a 2D platform game. I created it a few months ago and it took 6 months for it to be
+              <h3 id="t6">Game I developed and sell on Steam</h3>
+              <p class="p-6">Magus Pocus is a 2D platform game. I created it a few months ago and it took 6 months for
+                it to be
                 completed. I developed it from scratch and all art and programming was done by me.</p>
-              <a href="https://store.steampowered.com/app/2101760/Magus_Pocus/" class="button-link">Know more</a>
+              <a href="https://store.steampowered.com/app/2101760/Magus_Pocus/" class="button-link" id="button0">Know more</a>
             </div>
           </div>
         </div>
@@ -153,11 +162,12 @@
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
             <div class="project-text">
-              <h3>Paradise Beach Assets for Games</h3>
-              <p>Paradise Beach are assets that contain some images for creating scenarios in games. Contains 3
+              <h3 id="t7">Paradise Beach Assets for Games</h3>
+              <p class="p-7">Paradise Beach are assets that contain some images for creating scenarios in games.
+                Contains 3
                 variations of stems and coconut tree tops for you to combine and create different types of coconut
                 trees, bushes, beach background, rocks and ground.</p>
-              <a href="https://assetstore.unity.com/publishers/78812?preview=1" class="button-link">Know more</a>
+              <a href="https://assetstore.unity.com/publishers/78812?preview=1" class="button-link" id="button1">Know more</a>
             </div>
           </div>
         </div>
@@ -168,10 +178,11 @@
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
             <div class="project-text">
-              <h3>Netflix Clone</h3>
-              <p>I recreated the Netflix page on Jan 7th. 2021, to improve my knowledge in Javascript, HTML and CSS.
+              <h3 id="t8">Netflix Clone</h3>
+              <p class="p-8">I recreated the Netflix page on Jan 7th. 2021, to improve my knowledge in Javascript, HTML
+                and CSS.
                 Access my GitHub if you want the source code.</p>
-              <a href="https://github.com/vitor7goncalves/Netflix-clone" class="button-link">Know more</a>
+              <a href="https://github.com/vitor7goncalves/Netflix-clone" class="button-link" id="button2">Know more</a>
             </div>
           </div>
         </div>
@@ -182,10 +193,11 @@
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
             <div class="project-text">
-              <h3>Roll Dices Game</h3>
-              <p>A simple game that simulates dice scrolling made in Unity 2D. The game is open source and to use create a new project and replace the "Assets" folder.
+              <h3 id="t9">Roll Dices Game</h3>
+              <p class="p-9">A simple game that simulates dice scrolling made in Unity 2D. The game is open source and
+                to use create a new project and replace the "Assets" folder.
                 Access my GitHub if you want the source code.</p>
-              <a href="https://github.com/vitor7goncalves/Dices" class="button-link">Know more</a>
+              <a href="https://github.com/vitor7goncalves/Dices" class="button-link" id="button3">Know more</a>
             </div>
           </div>
         </div>
