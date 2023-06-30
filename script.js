@@ -4,6 +4,10 @@ function TranslateForPTBR() {
     var value = languageSelect.options[languageSelect.selectedIndex].value;
     var text = [ 1, 2, 3, 4, 5, 6, 7, 8, 9];
     var textText = [ 1, 2, 3, 4, 5, 6, 7, 8, 9];
+    var go = document.querySelector("#go");
+    var goText;
+    var buttonGo = document.querySelector("#button-go");
+    var buttonGoText;
     var languageText = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
     var language = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
     var button = [0, 1, 2, 3];
@@ -38,6 +42,8 @@ function TranslateForPTBR() {
         textText[8] = "Clone do Netflix";
         textText[9] = "Roll Dices Game";
         buttonText = "Saiba mais";
+        goText = "Acesse minha página criada com React.js";
+        buttonGoText = "Acesse";
     }
     else {
         languageText[0] = "I've been developing with C Sharp for just over 1 year. However, the longest time was within Unity. But I have small projects on GitHub where I used this tool. And of course, every day I learn more because my studies with C Sharp don't stop.";
@@ -60,7 +66,11 @@ function TranslateForPTBR() {
         textText[8] = "Netflix Clone";
         textText[9] = "Roll Dices Game";
         buttonText = "know more";
+        goText = "Go to my page created with React.js";
+        buttonGoText = "Access";
     }
+    go.innerHTML = goText;
+    buttonGo.innerHTML = buttonGoText;
     for(var i = 0; i <= 9; i++){
         language[i].innerHTML = languageText[i];
         if(i <= 8){

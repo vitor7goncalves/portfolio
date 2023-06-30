@@ -98,6 +98,7 @@ header {
     position: absolute;
     top: 30%;
     left: 15%;
+    z-index: 1;
 }
 
 .banner h1 {
@@ -121,18 +122,20 @@ header {
 
 .banner button {
     font-family: var (--font-action);
-    color: rgba(255, 255, 255, 1);
+    color: #000000;
     letter-spacing: .1rem;
     text-transform: uppercase;
-    background: #000046;
-    background: -webkit-linear-gradient(to top, #1CB5E0, #000046);
-    background: linear-gradient(to top, #1CB5E0, #000046);
+    background: #ffffff;
     padding: 1rem 3rem;
     /* primeiro valor em cima e em baixo, segundo valor nas laterais*/
-    border: none;
+    border: solid #000000;
     border-radius: 5px;
     cursor: pointer;
     animation: moveBanner 2s;
+}
+
+.banner a{
+    color: #000000;
 }
 
 @keyframes moveBanner {
