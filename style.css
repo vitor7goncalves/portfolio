@@ -6,8 +6,8 @@
     padding: 0;
     list-style-type: none;
     text-decoration: none;
+    color: #000000;
 }
-
 .container *{
     max-width: 100%;
 }
@@ -16,18 +16,26 @@
     --font-primary: "Baloo Da 2", serif;
     --font-secondary: "Josefin Slab", serif;
     --font-action: "Muli", serif;
+    --blue-100: #1e94c2;
+    --blue-200: #264b77;
+    --white-100: #ffffff;
+    --white-200: #cccece;
 }
 
 .line {
     width: 100%;
     height: .1rem;
-    background-color: #ffffff;
     box-shadow: .2rem .2rem 1px rgba(0, 0, 0, 0.4);
     transition: transform .2s;
 }
 
 .top-bar {
-    background-color: black;
+    background-image: linear-gradient(
+    to right,
+    var(--blue-200),
+    var(--blue-100),
+    var(--blue-200)
+  );
     height: 3rem;
     display: flex;
     align-items: center;
@@ -43,8 +51,7 @@
     width: 4rem;
     height: 2rem;
     margin-right: 3rem;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: var(--blue-100);
     font-size: medium;
     font-family: var(--font-secondary);
     border-radius: 7px;
@@ -52,7 +59,6 @@
 }
 
 .top-bar-soon p {
-    color: #f5f5f5;
     font-family: var(--font-secondary);
     margin-left: 3rem;
 }
@@ -102,7 +108,7 @@ header {
 }
 
 .banner h1 {
-    color: rgb(255, 255, 255);
+    color: var(--white-200);
     font-size: 3rem;
     text-shadow: .3rem .4rem 2px rgba(0, 0, 0, 0.4);
     line-height: 3.5rem;
@@ -113,7 +119,7 @@ header {
 .banner p {
     width: 70%;
     font-family: var(--font-secondary);
-    color: rgba(255, 255, 255, 1);
+    color: var(--white-200);
     font-size: 2rem;
     text-shadow: .3rem .4rem 2px rgba(0, 0, 0, 0.4);
     margin-bottom: 2rem;
@@ -122,7 +128,6 @@ header {
 
 .banner button {
     font-family: var (--font-action);
-    color: #000000;
     letter-spacing: .1rem;
     text-transform: uppercase;
     background: #ffffff;
@@ -132,11 +137,17 @@ header {
     border-radius: 5px;
     cursor: pointer;
     animation: moveBanner 2s;
+    transition: .5s;
 }
 
-.banner a{
-    color: #000000;
+.banner button:hover a{
+    color: var(--blue-200);
 }
+
+.banner button:hover {
+    border-color: var(--blue-200);
+}
+
 
 @keyframes moveBanner {
     0% {
@@ -156,8 +167,14 @@ header {
 
 .about-me-sessao {
     width: 100vw;
-    height: 15rem;
+    height: 50rem;
     margin-bottom: 11rem;
+    background-image: linear-gradient(
+    to bottom,
+    var(--white-200),
+    var(--white-100),
+    var(--white-200)
+  );
 }
 
 .sessao-header-about-me {
@@ -166,7 +183,6 @@ header {
     /*h1-centraliza-elemento vertical*/
     justify-content: center;
     /*torna o elemento horizontal*/
-    background-color: #000000;
     margin-bottom: 3.5rem;
     margin-top: -5.7rem;
 }
@@ -174,7 +190,6 @@ header {
 .sessao-header-about-me h1 {
     font-family: var(--font-primary);
     font-size: 2rem;
-    color: #f5f5f5;
 }
 
 .about-me-filho {
@@ -251,7 +266,12 @@ header {
 }
 
 .sessao-conhecimentos {
-    background-color: #f5f5f5;
+    background-image: linear-gradient(
+    to bottom,
+    var(--blue-200),
+    var(--blue-100),
+    var(--blue-200)
+  );
 }
 
 .sessao-header {
@@ -260,14 +280,12 @@ header {
     /*h1-centraliza-elemento vertical*/
     justify-content: center;
     /*torna o elemento horizontal*/
-    background-color: #000000;
     margin-bottom: 1.5rem;
 }
 
 .sessao-header h1 {
     font-family: var(--font-primary);
     font-size: 2rem;
-    color: #f5f5f5;
 }
 
 .conhecimento-header {
@@ -302,7 +320,6 @@ header {
     /*h1-centraliza-elemento vertical*/
     justify-content: center;
     /*torna o elemento horizontal*/
-    background-color: #000000;
     margin-bottom: 3.5rem;
 }
 
@@ -310,7 +327,15 @@ header {
 .sessao-header-card h1 {
     font-family: var(--font-primary);
     font-size: 2rem;
-    color: #f5f5f5;
+}
+
+.sessao-projetos{
+    background-image: linear-gradient(
+    to bottom,
+    var(--white-200),
+    var(--white-100),
+    var(--white-200)
+  );
 }
 
 .projets-video {
@@ -367,12 +392,17 @@ header {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     margin-top: 3rem;
-    background-color: #f5f5f5;
+    background: none;
     border: solid #000000;
     border-radius: 5px;
     text-decoration: none;
-    color: #000000;
     font-family: var(--font-secondary);
+    transition: .5s;
+}
+
+.button-link:hover{
+    border-color: var(--blue-200);
+    color: var(--blue-200);
 }
 
 .social-media {
@@ -384,7 +414,6 @@ header {
 
 .social-media i {
     font-size: 2rem;
-    color: #000000;
     align-items: center;
     border-radius: 50%;
     transition: color .5s;
@@ -399,7 +428,6 @@ header {
 
 .social-media img {
     font-size: 2rem;
-    color: #000000;
     align-items: center;
     transition: color .5s;
     transition: font-size .5s;
@@ -410,14 +438,17 @@ header {
 .session-footer {
     width: 100%;
     height: 10vh;
-    background-color: #000000;
-    margin-top: 3rem;
+    background-image: linear-gradient(
+        to bottom,
+        var(--blue-200),
+        var(--blue-100),
+        var(--blue-200)
+      );
     text-align: center;
     padding-top: 5rem;
 }
 
 .session-footer h3 {
-    color: #f5f5f5;
     font-family: var(--font-secondary);
 }
 
