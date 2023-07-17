@@ -8,7 +8,8 @@
     text-decoration: none;
     color: #000000;
 }
-.container *{
+
+.container * {
     max-width: 100%;
 }
 
@@ -22,45 +23,41 @@
     --white-200: #cccece;
 }
 
-.line {
-    width: 100%;
-    height: .1rem;
-    box-shadow: .2rem .2rem 1px rgba(0, 0, 0, 0.4);
-    transition: transform .2s;
-}
-
 .top-bar {
-    background-image: linear-gradient(
-    to right,
-    var(--blue-200),
-    var(--blue-100),
-    var(--blue-200)
-  );
-    height: 3rem;
+    background-image: linear-gradient(to right,
+            var(--blue-200),
+            var(--blue-100),
+            var(--blue-200));
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 20px solid #000000;
+    border-image-source: url("./img/img/Border-botton.png");
+    border-image-slice: 25;
 }
 
-.top-bar-soon{
+.top-bar-soon {
     display: flex;
     align-items: center;
 }
 
-.top-bar select{
+.top-bar select {
     width: 4rem;
     height: 2rem;
     margin-right: 3rem;
-    background-color: var(--blue-100);
+    background-color: var(--blue-200);
     font-size: medium;
     font-family: var(--font-secondary);
     border-radius: 7px;
     border: none;
+    font-weight: 700;
 }
 
 .top-bar-soon p {
     font-family: var(--font-secondary);
     margin-left: 3rem;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 .logo {
@@ -70,23 +67,20 @@
 }
 
 header {
-    width: 100%;
-    height: 100vh;
+    width: 100wv;
+    max-height: 120vh;
     overflow: hidden;
 }
 
 .img-wrapper {
     width: 100%;
-    height: 87%;
-    overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 1);
 }
 
 .img-wrapper img {
     width: 100%;
-    height: 100%;
     object-fit: cover;
-    opacity: 0.5;
+    opacity: 0.2;
     animation: zoom 20s;
 }
 
@@ -102,7 +96,7 @@ header {
 
 .banner {
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 15%;
     z-index: 1;
 }
@@ -140,7 +134,7 @@ header {
     transition: .5s;
 }
 
-.banner button:hover a{
+.banner button:hover a {
     color: var(--blue-200);
 }
 
@@ -167,14 +161,10 @@ header {
 
 .about-me-sessao {
     width: 100vw;
-    height: 50rem;
-    margin-bottom: 11rem;
-    background-image: linear-gradient(
-    to bottom,
-    var(--white-200),
-    var(--white-100),
-    var(--white-200)
-  );
+    background-image: linear-gradient(to right,
+            var(--white-200),
+            var(--white-100),
+            var(--white-200));
 }
 
 .sessao-header-about-me {
@@ -183,8 +173,6 @@ header {
     /*h1-centraliza-elemento vertical*/
     justify-content: center;
     /*torna o elemento horizontal*/
-    margin-bottom: 3.5rem;
-    margin-top: -5.7rem;
 }
 
 .sessao-header-about-me h1 {
@@ -222,23 +210,22 @@ header {
 
 .sessao-conhecimentos {
     width: 100%;
+    background-image: linear-gradient(to right,
+            var(--blue-200),
+            var(--blue-100),
+            var(--blue-200));
 }
 
 .coluna1 {
-    height: 100%;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding: 1rem 5rem;
 }
 
 .coluna2 {
-    height: 100%;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding: 1rem 5rem;
 }
 
 .features-area {
     width: 100%;
-    height: 100%;
 }
 
 .conhecimento:nth-child(1) {
@@ -263,15 +250,6 @@ header {
 
 .conhecimento:nth-child(6) {
     margin-bottom: 5rem;
-}
-
-.sessao-conhecimentos {
-    background-image: linear-gradient(
-    to bottom,
-    var(--blue-200),
-    var(--blue-100),
-    var(--blue-200)
-  );
 }
 
 .sessao-header {
@@ -329,13 +307,11 @@ header {
     font-size: 2rem;
 }
 
-.sessao-projetos{
-    background-image: linear-gradient(
-    to bottom,
-    var(--white-200),
-    var(--white-100),
-    var(--white-200)
-  );
+.sessao-projetos {
+    background-image: linear-gradient(to right,
+            var(--white-200),
+            var(--white-100),
+            var(--white-200));
 }
 
 .projets-video {
@@ -379,6 +355,7 @@ header {
     margin-bottom: 3rem;
     margin-right: 2rem;
 }
+
 .video-sessao4 {
     width: 65rem;
     height: 20rem;
@@ -400,7 +377,7 @@ header {
     transition: .5s;
 }
 
-.button-link:hover{
+.button-link:hover {
     border-color: var(--blue-200);
     color: var(--blue-200);
 }
@@ -410,6 +387,10 @@ header {
     width: 100%;
     bottom: 2rem;
     text-align: center;
+}
+
+.social-media * {
+    color: var(--blue-200);
 }
 
 .social-media i {
@@ -423,29 +404,34 @@ header {
 }
 
 .social-media i:hover {
-    color: #333333;
+    color: var(--blue-100);
 }
 
 .social-media img {
     font-size: 2rem;
     align-items: center;
-    transition: color .5s;
+    transition: all .5s;
     transition: font-size .5s;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
 }
 
+.social-media img:hover {
+    opacity: .8;
+}
+
 .session-footer {
     width: 100%;
-    height: 10vh;
-    background-image: linear-gradient(
-        to bottom,
-        var(--blue-200),
-        var(--blue-100),
-        var(--blue-200)
-      );
+    height: 15vh;
+    background-image: linear-gradient(to right,
+            var(--blue-200),
+            var(--blue-100),
+            var(--blue-200));
     text-align: center;
     padding-top: 5rem;
+    border-top: 20px solid #000000;
+    border-image-source: url("./img/img/Border-top.png");
+    border-image-slice: 25;
 }
 
 .session-footer h3 {
@@ -458,6 +444,7 @@ header {
         padding-left: 5rem;
         padding-right: 5rem;
     }
+
     .project-text {
         width: 100%;
         align-items: center;
@@ -474,6 +461,7 @@ header {
     .video-sessao3 {
         width: 100%;
     }
+
     .video-sessao4 {
         width: 100%;
     }
@@ -484,6 +472,14 @@ header {
 }
 
 @media screen and (max-width: 786px) {
+    .top-bar {
+        border-image-source: url('./img/img/Border-botton-menor.png');
+    }
+
+    .banner {
+        top: 30%;
+    }
+
     .about-me-filho {
         display: block;
         text-align: center;
@@ -511,18 +507,28 @@ header {
         padding-left: 2rem;
         padding-right: 2rem;
     }
-}
 
-@media screen and (max-width: 580px) {
-    .projets-video {
-        padding-left: 2rem;
-        padding-right: 2rem;
+    .session-footer {
+        border-image-source: url('./img/img/Border-top-menor.png');
     }
 }
 
 @media screen and (max-width: 580px) {
+    .top-bar select{
+        margin-right: 1rem;
+    }
+
+    .logo{
+        margin-left: 1rem;
+    }
+
     .banner {
-        left: 4%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 20%;
+        text-align: center;
+        justify-content: center;
     }
 
     .top-bar p {
@@ -551,3 +557,9 @@ header {
         height: 86%;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .banner {
+       top: 10%;
+       left: -.25rem;
+    }
