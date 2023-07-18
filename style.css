@@ -184,10 +184,10 @@ header {
 
 .about-me-filho {
     width: 100%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   padding: 4rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0rem;
 }
 
 .me {
@@ -215,7 +215,7 @@ header {
             var(--blue-200));
     border-top: 40px solid #000000;
     border-image-source: url("./img/img/Border-medio-top.png");
-    border-image-slice: 50;        
+    border-image-slice: 50;
 }
 
 .coluna1 {
@@ -444,9 +444,10 @@ header {
 }
 
 @media screen and (max-width: 850px) {
-    .banner{
+    .banner {
         left: 5%;
     }
+
     .projets-video {
         flex-direction: column;
         padding-left: 5rem;
@@ -498,13 +499,17 @@ header {
         flex-direction: column;
         text-align: center;
         margin-left: 0rem;
-        padding: 2rem 0rem 2rem 7rem;
+        padding: 2rem 0rem;
     }
 
-    .me {
+    .about-me-filho img{
         width: 10rem;
         height: 10rem;
-        margin-left: -20%;
+        margin-left: 3rem;
+    }
+
+    .about-me-filho p{
+        margin-left: 6rem;
     }
 
     .conhecimentos {
@@ -512,7 +517,7 @@ header {
     }
 
     .sessao-conhecimentos {
-        border-image-source: url("./img/img/Border-medio-top-menor.png");  
+        border-image-source: url("./img/img/Border-medio-top-menor.png");
     }
 
     .features-area {
@@ -535,11 +540,11 @@ header {
 }
 
 @media screen and (max-width: 580px) {
-    .top-bar select{
+    .top-bar select {
         margin-right: 1rem;
     }
 
-    .logo{
+    .logo {
         margin-left: 1rem;
     }
 
@@ -568,17 +573,35 @@ header {
     .img-wrapper {
         height: 86%;
     }
+
     .about-me-filho {
-        padding: 2rem 0rem 2rem 4rem;
+        padding: 2rem 0rem;
+    }
+
+    .about-me-filho img{
+        margin-left: 3rem;
+    }
+
+    .about-me-filho p{
+        margin-left: 6rem;
     }
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 413px) {
     .banner {
-       top: 15%;
-       left: -.25rem;
+        top: 15%;
+        left: -.25rem;
     }
+
     .about-me-filho {
-        padding: 2rem 0rem 2rem 3rem;
+        padding: 2rem 0rem;
+    }
+
+    .about-me-filho img {
+        margin-left: 3rem;
+    }
+    
+    .about-me-filho p {
+        margin-left: 3rem;
     }
 }
